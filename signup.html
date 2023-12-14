@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Signup Page</title>
+</head>
+<body>
+    <div class="h-screen flex items-center justify-center bg-gradient-to-r from-green-400 to-teal-200 p-8" >
+        <div class="bg-white p-8  w-full max-w-md">
+      
+          <form id="signup-form" class="mb-4" onsubmit=" return redirectToAnotherPage()">
+            <h2 class="text-2xl text-center font-semibold mb-4 text-green-900">Registration </h2>
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                  Email Address
+              </label>
+            <input class="w-full p-2 border rounded-md" type="email" id="email" name="email"
+            placeholder="example@example.com"
+            required
+            />
+      
+            <label class="block text-gray-700 text-sm font-bold mt-4 mb-2" for="password">
+              Password
+            </label>
+            <input
+              class="w-full p-2 border rounded-md"
+              type="password"
+              id="password"
+              placeholder="Password"
+              name="password"
+              required
+            />
+            <input 
+            class="p-2 border" type="checkbox" id="myCheckbox" name="myCheckbox" required>
+            <label class=" ext-gray-700 text-sm font-bold mt-4 mb-2"for="myCheckbox"> I accept the terms and conditions</label>
+      <div>
+      
+       
+
+       
+      
+       </div>
+       
+            <button class="bg-green-900 text-white  px-4 py-2 mt-4 rounded-md" id="button">
+              Sign Up
+            </button>
+
+            <span class="ml-7">Already Registered?</span>
+            <a href="login.html"   class="text-green-500 text-right ml-0">Login here</a>
+          </div>
+          </form>
+          <script src="signup.js"></script>
+</body>
+</html>

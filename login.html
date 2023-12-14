@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Loginpage</title>
+</head>
+<body>
+  <div class="h-screen flex items-center justify-center bg-gradient-to-r from-green-400 to-teal-200 p-8" >
+    <div class="bg-white p-8  w-full max-w-md">
+      <form id="login-form" class="mb-4" onsubmit="return anotherPage()">
+        <h2 class="text-2xl text-center font-semibold mb-4 text-green-900">Login Form </h2>
+        <label class="block text-gray-700 text-sm font-bold mb-2" for="emails">
+          Email Address
+        </label>
+        <input
+          class="w-full p-2 border rounded-md"
+          type="email"
+          id="loginEmail"
+          name="email"
+          placeholder="example@example.com"
+          required
+        />
+  
+        <label class="block text-gray-700 text-sm font-bold mt-4 mb-2" for="passwords">
+          Password
+        </label>
+        <input
+          class="w-full p-2 border rounded-md"
+          type="password"
+          id="loginPassword"
+          name="password"
+          placeholder="Enter Password"
+          required
+        />
+        <div><span>not a member?</span>
+          <a href="signup.html"   class="text-green-500 text-right">sign up now</a></div>
+       <div>
+
+        <button class="bg-green-500 text-white px-4 py-2 mt-4 rounded-md " id="submit">
+          Login
+        </button>
+      
+       </div>
+      </form>
+  </div></div>
+      <script src="login.js"></script>
+</body>
+</html>
